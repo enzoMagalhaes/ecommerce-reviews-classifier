@@ -1,5 +1,7 @@
 
-SELECTED_FEATURES = ["review_comment_title",'review_comment_message','review_score']
+SELECTED_FEATURES = ["review_comment_title",'review_comment_message']
+
+INPUT_FEATURES = ["review_comment_title",'review_comment_message','review_score']
 
 DEVICE = 'cpu'
 
