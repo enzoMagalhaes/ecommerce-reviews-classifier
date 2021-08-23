@@ -1,1 +1,1 @@
-A Pytorch NLP LSTM model pipeline for classifying customer reviews of a brazilian ecommerce store
+A Pytorch NLP LSTM model pipeline package for classifying customer reviews of a brazilian ecommerce store

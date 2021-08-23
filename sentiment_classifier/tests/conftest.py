@@ -16,6 +16,13 @@ def clean_df_sample():
 	return df.iloc[0:10]
 
 @pytest.fixture()
+def clean_df():
+	df = dm.load_dataset()
+	df = df[df['review_comment_message'].isnull()==False]
+
+	return df
+
+@pytest.fixture()
 def json_sample():
 	
 	sample = open("tests/json_test_sample.json")

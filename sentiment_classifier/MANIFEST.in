@@ -1,0 +1,17 @@
+include *.txt
+include *.md
+include *.pkl
+recursive-include ./sentiment_classifier/*
+
+include sentiment_classifier/datasets/
+include sentiment_classifier/trained_models/*.pkl
+include sentiment_classifier/trained_models/model_weights
+include sentiment_classifier/VERSION
+
+
+include ./requirements/requirements.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

@@ -35,7 +35,7 @@ def validate_inputs(df):
 	transformed_df = transformer.transform(df)
 
 	for i in range(len(transformed_df)):
-		if  transformed_df["review_comment"].iloc[i] == ' ' or pd.isnull(transformed_df["review_comment"].iloc[i]):
+		if transformed_df["review_comment"].iloc[i] == ' ' or pd.isnull(transformed_df["review_comment"].iloc[i]):
 		  #filter the row
 			df.drop(index=i,inplace=True)
 				
@@ -43,9 +43,6 @@ def validate_inputs(df):
 			errors.append(error)
 
 	return (df , errors)
-
-
-
 
 
 
