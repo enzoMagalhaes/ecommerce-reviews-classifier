@@ -1,0 +1,74 @@
+[
+  {
+    "review_id": "e64fb393e7b32834bb789ff8bb30750e",
+    "order_id": "658677c97b385a9be170737859d3511b",
+    "review_score": 5,
+    "review_comment_title": "",
+    "review_comment_message": "Recebi bem antes do prazo estipulado.",
+    "review_creation_date": "2017-04-21 00:00:00",
+    "review_answer_timestamp": "2017-04-21 22:02:06"
+  },
+  {
+    "review_id": "f7c4243c7fe1938f181bec41a392bdeb",
+    "order_id": "8e6bfb81e283fa7e4f11123a3fb894f1",
+    "review_score": 5,
+    "review_comment_title": "",
+    "review_comment_message": "Parabéns lojas lannister adorei comprar pela Internet seguro e prático Parabéns a todos feliz Páscoa",
+    "review_creation_date": "2018-03-01 00:00:00",
+    "review_answer_timestamp": "2018-03-02 10:26:53"
+  },
+  {
+    "review_id": "8670d52e15e00043ae7de4c01cc2fe06",
+    "order_id": "b9bf720beb4ab3728760088589c62129",
+    "review_score": 4,
+    "review_comment_title": "recomendo",
+    "review_comment_message": "aparelho eficiente. no site a marca do aparelho esta impresso como 3desinfector e ao chegar esta com outro nome...atualizar com a marca correta uma vez que é o mesmo aparelho",
+    "review_creation_date": "2018-05-22 00:00:00",
+    "review_answer_timestamp": "2018-05-23 16:45:47"
+  },
+  {
+    "review_id": "4b49719c8a200003f700d3d986ea1a19",
+    "order_id": "9d6f15f95d01e79bd1349cc208361f09",
+    "review_score": 4,
+    "review_comment_title": "",
+    "review_comment_message": "Mas um pouco ,travando...pelo valor ta Boa.",
+    "review_creation_date": "2018-02-16 00:00:00",
+    "review_answer_timestamp": "2018-02-20 10:52:22"
+  },
+  {
+    "review_id": "3948b09f7c818e2d86c9a546758b2335",
+    "order_id": "e51478e7e277a83743b6f9991dbfa3fb",
+    "review_score": 5,
+    "review_comment_title": "Super recomendo",
+    "review_comment_message": "Vendedor confiável, produto ok e entrega antes do prazo.",
+    "review_creation_date": "2018-05-23 00:00:00",
+    "review_answer_timestamp": "2018-05-24 03:00:01"
+  },
+  {
+    "review_id": "9314d6f9799f5bfba510cc7bcd468c01",
+    "order_id": "0dacf04c5ad59fd5a0cc1faa07c34e39",
+    "review_score": 2,
+    "review_comment_title": "",
+    "review_comment_message": "GOSTARIA DE SABER O QUE HOUVE, SEMPRE RECEBI E ESSA COMPRA AGORA ME DECPCIONOU",
+    "review_creation_date": "2018-01-18 00:00:00",
+    "review_answer_timestamp": "2018-01-20 21:25:45"
+  },
+  {
+    "review_id": "373cbeecea8286a2b66c97b1b157ec46",
+    "order_id": "583174fbe37d3d5f0d6661be3aad1786",
+    "review_score": 1,
+    "review_comment_title": "Não chegou meu produto",
+    "review_comment_message": "Péssimo",
+    "review_creation_date": "2018-08-15 00:00:00",
+    "review_answer_timestamp": "2018-08-15 04:10:37"
+  },
+  {
+    "review_id": "d21bbc789670eab777d27372ab9094cc",
+    "order_id": "4fc44d78867142c627497b60a7e0228a",
+    "review_score": 5,
+    "review_comment_title": "Ótimo",
+    "review_comment_message": "Loja nota 10",
+    "review_creation_date": "2018-07-10 00:00:00",
+    "review_answer_timestamp": "2018-07-11 14:10:25"
+  }
+]

@@ -1,46 +1,49 @@
 from sentiment_classifier.predict import make_prediction
 from sentiment_classifier.processing import data_management as dm
 
-def test_prediction():
-	df = dm.load_dataset()
+def test_prediction(df_sample):
+	df = df_sample
 
 	df = df[df['review_comment_message'].isnull()==False]
 
-	results = make_prediction(df.iloc[0:5])
+	results = make_prediction(df)
 	predictions = results['predictions']
 
 
-	#map predictions
-	import pandas as pd
-	predictions = pd.Series(predictions)
-	predictions = predictions.map({0:'positive',1:'neutral',2:'negative'})
-	predictions = predictions.tolist()
+	assert len(predictions) == len(df)
+	assert isinstance(predictions[0],int)
 
-	targets = df['review_score'].iloc[0:5]
-	targets = targets.map({5:'positive',4:'positive',3:'neutral',2:'negative',1:'negative'})
-	targets = targets.tolist()
+def test_single_input_prediction(df_sample):
+	df = df_sample
 
-	print(f'targets: {targets} , predictions: {predictions}')
+	df = df[df['review_comment_message'].isnull()==False]
+	df = df.iloc[0:1]
 
-
-def test_validation():
-	df = dm.load_dataset()
-
-	#test selected_features
-	df = df[['review_comment_message','review_id']]
-
-	#test typeerror
-	df['review_comment_message'] = 1
-
-
-	results = make_prediction(df.iloc[0:10])
+	results = make_prediction(df)
 	predictions = results['predictions']
-	errors = results['errors']
-
-	print(f'predictions: {predictions} , errors: {errors}')
 
 
-	
-if __name__ == '__main__':
-	# test_prediction()
-	test_validation()
+	assert len(predictions) == len(df)
+	assert isinstance(predictions[0],int)
+
+
+def test_json_prediction(json_sample):
+
+	results = make_prediction(json_sample)
+	predictions = results['predictions']
+
+
+	assert len(predictions) == len(json_sample)
+	assert isinstance(predictions[0],int)
+
+def test_json_single_input_prediction(single_json_sample):
+
+	results = make_prediction(single_json_sample)
+	predictions = results['predictions']
+
+
+	assert len(predictions) == 1
+	assert isinstance(predictions[0],int)
+
+
+

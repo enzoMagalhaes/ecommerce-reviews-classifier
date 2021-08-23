@@ -12,7 +12,7 @@ def validate_inputs(df):
 
 		# check if input has selected features 
 		if feature not in df.columns:
-			error = f'BadInputError: input does not have {feature} column '
+			error = f'BadInputError: input does not have {feature} column'
 			errors.append(error)
 			continue
 
