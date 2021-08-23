@@ -30,11 +30,12 @@ def validate_inputs(df):
 
 	# check/filter if input has Nans
 	from sentiment_classifier.processing.preprocessors import AppendTitleWithMessage
+	import pandas as pd
 	transformer = AppendTitleWithMessage()
 	transformed_df = transformer.transform(df)
 
 	for i in range(len(transformed_df)):
-		if  transformed_df["review_comment"].iloc[i] == ' ':
+		if  transformed_df["review_comment"].iloc[i] == ' ' or pd.isnull(transformed_df["review_comment"].iloc[i]):
 		  #filter the row
 			df.drop(index=i,inplace=True)
 				

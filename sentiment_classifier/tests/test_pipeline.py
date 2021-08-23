@@ -26,19 +26,14 @@ def test_prediction():
 def test_validation():
 	df = dm.load_dataset()
 
-	df = df[df['review_comment_message'].isnull()==False]
-
 	#test selected_features
-	# df = df[['review_comment_message','review_id']]
+	df = df[['review_comment_message','review_id']]
 
 	#test typeerror
-	# df['review_comment_message'] = 1
+	df['review_comment_message'] = 1
 
-	#test NAN filter
-	#	DOES NOT WORK !!!!!!!
-	df['review_comment_message'] = None
 
-	results = make_prediction(df.iloc[0:1])
+	results = make_prediction(df.iloc[0:10])
 	predictions = results['predictions']
 	errors = results['errors']
 
